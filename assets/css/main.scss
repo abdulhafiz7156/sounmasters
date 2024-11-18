@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  background-color: #252222;
+}
+
+@font-face {
+  font-family: 'Onest';
+  src: local('Onest'),
+  url('../../public/fonts/Onest/static/Onest-Light.ttf') format('truetype');
+  font-weight: 300; /* Optional: Specify weight if needed */
+  font-style: normal; /* Optional: Specify style if needed */
+}
+
+.el-popper.is-light.blueBack {
+  background-color: #1F1D1D80 !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 12px !important;
+}
+
+.blueBack.el-popper[data-popper-placement^=bottom] .el-popper__arrow::before {
+  background: transparent !important;
+  /*border: 1px solid rgba(255, 255, 255, 0.2) !important;*/
+}
+
+.blueBack.el-popper[data-popper-placement^=top] .el-popper__arrow::before {
+  background: #1F1D1D80 !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+.blueBack {
+  --el-color-primary: grey;
+
+  .el-select-dropdown__item.hover, .el-select-dropdown__item:hover {
+    background: #1F1D1D80 !important;
+    /*color: white;*/
+  }
+
+  .el-select-dropdown__item {
+    font-family: Onest;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 22.95px;
+    color: white;
+    /*background: #FFFFFF !important;*/
+  }
+
+  .el-select-dropdown__item.selected {
+    background: #1F1D1D80 !important;
+    font-family: Onest;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22.95px;
+    color: grey !important;
+   /* color: #1F1D1D80 !important;*/
+  }
+}
